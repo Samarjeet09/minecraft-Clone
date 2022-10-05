@@ -43,3 +43,9 @@ body {
 .absolute {
   position: absolute;
 }
+.centered {
+  top: 50%;
+  left: 50%;
+  /* makes ek dum middle mei  */
+  transform: translate(-50%, -50%);
+}
