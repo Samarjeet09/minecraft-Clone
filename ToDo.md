@@ -8,8 +8,9 @@
 [DONE] First person view
 [DONE] Gravity{phy container takes care of it }
 [DONE] Movement
-[] State management
-[] Cubes
+[DONE] State management
+[Done] Cubes
+[]adding cubes
 [] Cube type selector
 [] Save world in localstorage
 [] Build a house

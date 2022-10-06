@@ -11,7 +11,7 @@ const SPEED = 5;
 
 export const Player = () => {
   const actions = useKeyboard();
-  console.log(Object.entries(actions).filter(([k, v]) => v));
+  // console.log(Object.entries(actions).filter(([k, v]) => v));
 
   const { camera } = useThree();
   const [ref, api] = useSphere(() => ({

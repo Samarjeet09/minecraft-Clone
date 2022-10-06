@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Ground } from "./components/Ground";
 import { Player } from "./components/Player";
 import { FPV } from "./components/FPV";
+import { Cubes } from "./components/Cubes";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Physics>
           {/* this is our container which will have all the physics and all imsei ground wagera bamega  */}
           <Player />
+          <Cubes />
           <Ground />
         </Physics>
       </Canvas>
