@@ -1,11 +1,13 @@
 import { useBox } from "@react-three/cannon";
 import * as alltextures from "../images/textures";
 import { useStore } from "../hooks/useStore";
+import { useState } from "react";
 
 export const Cube = ({ position, texture }) => {
   const [ref] = useBox(() => ({ type: "Static", position }));
   const activeTexture = alltextures[texture + "Texture"];
   //   console.log(activeTexture);
+  const [hover, setHover] = useState(false);
 
   const [addCube, removeCube] = useStore((state) => [
     state.addCube,
@@ -14,6 +16,14 @@ export const Cube = ({ position, texture }) => {
 
   return (
     <mesh
+      onPointerMove={(e) => {
+        e.stopPropagation();
+        setHover(true);
+      }}
+      onPointerOut={(e) => {
+        e.stopPropagation();
+        setHover(false);
+      }}
       onClick={(e) => {
         // console.log(e.nativeEvent.button);
         e.stopPropagation();
@@ -46,7 +56,13 @@ export const Cube = ({ position, texture }) => {
       ref={ref}
     >
       <boxGeometry attach="geometry" />
-      <meshStandardMaterial map={activeTexture} attach="material" />
+      <meshStandardMaterial
+        map={activeTexture}
+        attach="material"
+        transparent={true}
+        opacity={texture === "glass" ? 0.69 : 1}
+        color={hover ? "#B0B0B0" : "white"}
+      />
     </mesh>
   );
 };

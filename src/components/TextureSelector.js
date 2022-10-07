@@ -10,7 +10,7 @@ const images = {
   wood: woodImg,
   log: logImg,
 };
-// khali html hi hoga yeh okie :)
+
 export const TextureSelector = () => {
   const [visible, setVisible] = useState(false);
   const [activeTexture, setTexture] = useStore((state) => [
@@ -38,7 +38,6 @@ export const TextureSelector = () => {
       setVisible(false);
     }, 2000);
     setVisible(true);
-
     return () => {
       clearTimeout(visibilityTimeout);
     };
@@ -50,7 +49,7 @@ export const TextureSelector = () => {
         <h6 id="textureHeading" className="absolute left">
           {activeTexture}
         </h6>
-        <div className="absolute top texture-selector ">
+        <div className="absolute top texture-selector">
           {Object.entries(images).map(([k, src]) => {
             return (
               <img

@@ -21,7 +21,7 @@ export const Ground = () => {
         e.stopPropagation();
         if (e.nativeEvent.button === 0) {
           const [x, y, z] = Object.values(e.point).map((val) => Math.ceil(val));
-          console.log(x, y, z);
+          // console.log(x, y, z);
           addCube(x, y, z);
         }
         // debugger;

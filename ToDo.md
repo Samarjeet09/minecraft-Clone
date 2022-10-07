@@ -13,5 +13,8 @@
 [DONE]adding cubes
 [DONE]Removing cubes
 [DONE] Cube type selector
-[] Save world in localstorage
+[X] Save world in localstorage
+{unable to save the world w/o errors
+}
+[DONE]Hover state
 [] Build a house
