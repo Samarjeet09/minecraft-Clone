@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/minecraft-Clone/static/css/main.0b6afc7a.css",
-    "main.js": "/minecraft-Clone/static/js/main.9b4da89d.js",
+    "main.js": "/minecraft-Clone/static/js/main.68f1d67d.js",
     "index.html": "/minecraft-Clone/index.html",
     "main.0b6afc7a.css.map": "/minecraft-Clone/static/css/main.0b6afc7a.css.map",
-    "main.9b4da89d.js.map": "/minecraft-Clone/static/js/main.9b4da89d.js.map"
+    "main.68f1d67d.js.map": "/minecraft-Clone/static/js/main.68f1d67d.js.map"
   },
   "entrypoints": [
     "static/css/main.0b6afc7a.css",
-    "static/js/main.9b4da89d.js"
+    "static/js/main.68f1d67d.js"
   ]
 }
