@@ -49,3 +49,25 @@ body {
   /* makes ek dum middle mei  */
   transform: translate(-50%, -50%);
 }
+.top {
+  top: 4%;
+  left: 47%;
+}
+.left {
+  top: 8%;
+  left: 47%;
+}
+
+.texture-selector {
+  /* background-color: pink; */
+  transform: scale(3);
+}
+#textureHeading {
+  z-index: 1;
+  font-family: "Silkscreen";
+}
+.texture-selector img.active {
+  border: 2px solid rebeccapurple;
+  /* padding: 0px; */
+  /* margin: 0px; */
+}

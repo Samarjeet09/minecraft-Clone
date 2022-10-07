@@ -9,8 +9,9 @@
 [DONE] Gravity{phy container takes care of it }
 [DONE] Movement
 [DONE] State management
-[Done] Cubes
-[]adding cubes
-[] Cube type selector
+[DONE] Cubes
+[DONE]adding cubes
+[DONE]Removing cubes
+[DONE] Cube type selector
 [] Save world in localstorage
 [] Build a house
