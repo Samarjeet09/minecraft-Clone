@@ -106,3 +106,25 @@ body {
   );
   animation: background 3s linear infinite;
 }
+
+.helpBox {
+  font-family: "Silkscreen";
+  text-align: end;
+  top: 10px;
+  right: 10px;
+  font-size: medium;
+  padding: 0px;
+  margin: 0px;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

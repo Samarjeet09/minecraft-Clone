@@ -25,6 +25,19 @@ function App() {
       <div className="absolute centered cursor">+</div>
       <TextureSelector />
       <Menu />
+      <div className="absolute helpBox">
+        <p>
+          w,a,s,d to move <br /> space to jump
+          <br />
+          1-5 for textures
+          <br />
+          Right Click to place a block
+          <br />
+          Left Click to remove a block
+          <br />
+          Have Fun!
+        </p>
+      </div>
     </>
   );
 }
